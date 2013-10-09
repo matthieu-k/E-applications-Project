@@ -1,0 +1,38 @@
+{use $installRoot}
+
+<h2>Add an article</h2>
+
+<form action="{$installRoot}/addsubmit" method="post" id="edit">
+<p>
+	<label for="title">Title</label>
+	<input type="text" id="title" name="title" required/>
+</p>
+<p>
+	<label for="excerpt">Excerpt</label>
+	<textarea id="excerpt" name="excerpt"></textarea>
+</p>
+<p>
+	<label for="body">Body</label>
+	<textarea id="body" name="body"></textarea>
+</p>
+<h3>SEO Options</h3>
+<p>
+	<label for="urlSlug">Url Slug</label>
+	<input type="text" id="urlSlug" name="urlSlug" required />
+</p>
+<p>
+	<label for="metaDescription">Meta Description</label>
+	<input type="text" id="metaDescription" name="metaDescription" required />
+</p>
+<p>
+	<label for="metaKeywords">Meta Keywords</label>
+	<input type="text" id="metaKeywords" name="metaKeywords" required />
+</p>
+<p>
+	<label for="tags">Tags</label>
+	<input type="text" id="tags" name="tags" required />
+</p>
+<p class="center">
+	<input type="submit" value="Add" />
+</p>
+</form>

@@ -1,0 +1,12 @@
+{use $installRoot}
+<header>
+<div class="makeTransparent"></div>
+    	<div id="top">
+			Tech and Web News
+        </div>
+        <nav>
+        	<div class="left"><a href="{$installRoot}/">HOME</a></div>
+			<div class="right"><a href="{$installRoot}/add">ADD AN ARTICLE</a> <a href="{$installRoot}/about">ABOUT</a> <a href="{$installRoot}/contact">CONTACT</a></div>
+			<div class="clear"></div>
+        </nav>
+    </header>

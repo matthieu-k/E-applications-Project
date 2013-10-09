@@ -1,0 +1,13 @@
+body {
+	background: #000 url(../../media/gfx/bg-blue.jpg) repeat top center;
+}
+#top {
+	text-shadow: 0 0 4px white, 0 -4px 4px #4ba0ff, 2px -8px 6px #2182ef, -2px -12px 11px #1062be, 2px -15px 18px #0d4585, 0 4px 4px #4ba0ff, 2px 8px 6px #2182ef, -2px 12px 15px #1062be, 2px 15px 18px #0d4585;
+	color: #c0d3e8;
+}
+.makeTransparentFooter {
+	background: #6295d5;
+}
+h2 a:hover {
+	color: #2182ef;
+}

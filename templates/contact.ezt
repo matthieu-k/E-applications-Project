@@ -1,0 +1,24 @@
+{use $installRoot}
+
+<h1>CONTACT</h1>
+<form id="contact" action="{$installRoot}/contacted" method="post">
+<p>
+	<label for="name">Name</label>
+	<input id="name" name="name" type="text" placeholder="First and last name" required autofocus>
+</p>
+<p>
+	<label for="email">E-mail</label>
+	<input id="email" name="email" type="email" placeholder="example@domain.com" required>
+</p>
+<p>
+	<label for="sujet">Sujet</label>
+	<input id="sujet" name="sujet" type="sujet" required>
+</p>
+<p>
+	<label for="message">Message</label>
+	<textarea id="message" name="message" rows="5" required></textarea>
+</p>
+<p class="center">
+	<button type="submit">Send</button>
+</p>
+</form>

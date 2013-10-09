@@ -1,0 +1,17 @@
+<div class="contactInformation">
+	<h3>KEEP IN TOUCH</h3>
+	<span class="vcard"><span class="fn">KAPETANOS Matthieu</span></span>
+	<a href="https://www.facebook.com/mkapetanos" class="icon facebook" target="_blank"></a>
+	<a href="https://twitter.com/matthewkpl" class="icon twitter" target="_blank"></a>
+	<a href="http://www.linkedin.com/pub/matthew-kapetanos/37/22a/663" class="icon linkedin" target="_blank"></a>
+	<a href="https://plus.google.com/103863413833987961957/" class="icon googleplus" target="_blank"></a>
+	<a href="http://www.flickr.com/photos/61660814@N07/" class="icon flickr" target="_blank"></a>
+	<div class="clear"></div>
+	<span class="vcard"><span class="fn">TUVEE Steeve</span></span>
+	<a href="https://www.facebook.com/steeve.tuvee" class="icon facebook" target="_blank"></a>
+	<a href="https://plus.google.com/100255226670232994666/" class="icon googleplus" target="_blank"></a>
+	<div class="clear"></div>
+	<div class="fb-like" data-href="http://e-application.whitefenix.com/www/" data-send="false" data-width="450" data-show-faces="true" data-colorscheme="dark"></div>
+	<a href="#" class="icon rss" target="_blank"></a>
+	<div class="clear"></div>
+</div>

@@ -1,0 +1,33 @@
+{use $articles, $nbpage, $currentid, $installRoot}
+{var $i = 1}
+
+<h3>ARTICLES</h3>
+
+{foreach $articles as $article}
+	<article>
+	<h2><a href="{$installRoot}/article/{$article->id}/{$article->urlSlug}">{$article->title}</a></h2>
+	<span>published on {$article->dateCreated}</span>
+	{raw $article->excerpt}
+	<em><a href="{$installRoot}/article/{$article->id}/{$article->urlSlug}">Continue reading &raquo;</a></em>
+	</article>
+{/foreach}
+
+<!-- afficher "Previous" seulement si on n'est pas sur la page 1 -->
+<div class="paging">
+{if $currentid==1}
+{else}
+<a href="{$installRoot}/list/{$currentid-1}" class="nav">Previous</a>
+{/if}
+
+<!-- afficher le nombre de page -->
+{while $i <= $nbpage}
+	<a href="{$installRoot}/list/{$i}" {if $currentid == $i}class="current"{/if}>{$i}</a>
+   {$i++}
+{/while}
+
+<!-- afficher "Next" seulement si on n'est pas sur la derniere page -->
+{if $currentid==$nbpage}
+{else}
+<a href="{$installRoot}/list/{$currentid+1}" class="nav">Next</a>
+{/if}
+</div>

@@ -1,0 +1,4 @@
+{use $message}
+
+<h1>Contact</h1>
+<p>{raw $message}</p>

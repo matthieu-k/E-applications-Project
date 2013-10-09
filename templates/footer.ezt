@@ -1,0 +1,12 @@
+<div class="makeTransparentFooter"></div>
+<div id="copyright">
+	<p>2012</p>
+	<div class="left">
+		<p>This website has been made using the Zeta Compontent framework and the latest web technologies such as HTML 5 and CSS3.</p>
+	</div>
+	<div class="right">
+		<a href="#">Sitemap</a> | 
+		<a href="http://validator.w3.org/check?uri=http://e-application.whitefenix.com/www/" target="_blank">HTML</a> / <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://e-application.whitefenix.com/www/media/styles.css&amp;profile=css3" target="_blank">CSS</a> Valid
+	</div>
+	<div class="clear"></div>
+</div>

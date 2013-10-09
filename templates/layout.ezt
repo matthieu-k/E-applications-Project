@@ -1,0 +1,55 @@
+{use $content, $footer, $header, $aside, $article = 0, $installRoot, $headExtra = ""}
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<style type="text/css">@import url("{$installRoot}/media/css/styles.css");</style>
+	<link rel="stylesheet" href="{$installRoot}/media/css/blue.css" media="all" />
+	<link rel="shortcut icon" href="{$installRoot}/media/gfx/favicon.ico" />
+	<script type="text/javascript" src="{$installRoot}/scripts/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="{$installRoot}/scripts/script.js" ></script>
+	
+	<!-- Si la page se trouve dans un article on change le titre, la meta description et les meta keywords pour SEO -->
+	{if $article == 0 }
+    	<title>Tech and Web News</title>
+		<meta name="description" content="Technological news" />
+		<meta name="keywords" content="technology, computer, internet" />
+	{else}
+    	<title>{$article['title']} | Tech and Web News</title>
+		<meta name="description" content="{$article['metaDescription']}" />
+		<meta name="keywords" content="{$article['metaKeywords']}" />
+		<!-- Meta tags pour Facebook share -->
+		<meta property="og:title" content="{$article['title']}" />
+		<meta property="og:description" content="{$article['metaDescription']}" />
+	{/if}
+	<meta name="author" content="Matthieu Kapetanos, Steeve Tuvée" />
+	
+	<!-- Si la page se trouve dans l'edtion j'ajoute des scripts supplementaires (tiny MCE) -->
+	{raw $headExtra}
+</head>
+<body>
+<div id="fb-root"></div>
+<script type="text/javascript" src="{$installRoot}/scripts/fb.js" ></script>
+	<div id="css-changer">
+		<a class="colorbox blue" href="?theme=blue" title="Blue Theme"></a>
+		<a class="colorbox green" href="?theme=green" title="Green Theme"></a>
+		<a class="colorbox red" href="?theme=red" title="Red Theme"></a>
+	</div>
+	<div id="wrapper">
+		{raw $header}
+		<div id="main">
+		<div class="makeTransparent"></div>
+			<section>
+			{raw $content}
+			</section>
+			<aside>
+			{raw $aside}
+			</aside>
+			<div class="clear"></div>
+		</div>
+    </div>
+<footer>
+{raw $footer}
+</footer>
+</body>
+</html>

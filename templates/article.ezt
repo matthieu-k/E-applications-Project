@@ -1,0 +1,10 @@
+{use $article, $installRoot}
+
+<article>
+<h1>{$article['title']}</h1>
+<span>published on {$article['dateCreated']}</span>
+{raw $article['body']}
+<div class="tags">Tags: {$article['tags']}</div>
+</article>
+
+<div class="options"><a href="{$installRoot}/edit/{$article['id']}">Edit article</a></div>

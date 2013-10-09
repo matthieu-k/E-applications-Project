@@ -1,0 +1,14 @@
+{use $articles, $installRoot}
+
+<h3>LAST NEWS</h3>
+
+{foreach $articles as $article}
+	<article>
+	<h2><a href="{$installRoot}/article/{$article->id}/{$article->urlSlug}">{$article->title}</a></h2>
+	<span>published on {$article->dateCreated}</span>
+	{raw $article->excerpt}
+	<em><a href="{$installRoot}/article/{$article->id}/{$article->urlSlug}">Continue reading &raquo;</a></em>
+	</article>
+{/foreach}
+
+<a href="{$installRoot}/list/1" class="morearticles">More articles &raquo;</a>

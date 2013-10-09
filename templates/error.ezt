@@ -1,0 +1,5 @@
+{use $installRoot}
+
+<h2>Error</h2>
+<p>The page you requested does not exist.</p>
+<p><a href="{$installRoot}/">Return home &raquo;</a></p>

@@ -1,0 +1,4 @@
+{use $installRoot}
+
+<script type="text/javascript" src="{$installRoot}/scripts/tiny_mce/tiny_mce.js"></script>
+<script type="text/javascript" src="{$installRoot}/scripts/tinymceinit.js"></script>

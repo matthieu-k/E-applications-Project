@@ -1,0 +1,13 @@
+body {
+	background: #000 url(../../media/gfx/bg-green.jpg) repeat top center;
+}
+#top {
+	text-shadow: 0 0 4px white, 0 -4px 4px #73d775, 2px -8px 6px #62cc64, -2px -12px 11px #54c157, 2px -15px 18px #47b14a, 0 4px 4px #73d775, 2px 8px 6px #62cc64, -2px 12px 15px #54c157, 2px 15px 18px #47b14a;
+	color: #82e285;
+}
+.makeTransparentFooter {
+	background: #73d775;
+}
+h2 a:hover {
+	color: #62cc64;
+}

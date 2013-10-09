@@ -1,0 +1,48 @@
+{use $article, $installRoot}
+
+<h2>Editing article: <strong>{$article['title']}</strong></h2>
+<div class="dates">Published on {$article['dateCreated']}
+<!-- Ne pas afficher le champs "dateUpdated" si cet article n'a pas eu de mise a jour -->
+{if $article['dateUpdated'] != "0000-00-00 00:00:00" }
+ | Last updated on {$article['dateUpdated']}</div>
+{/if}
+
+<form action="{$installRoot}/editsubmit/{$article['id']}" method="post" id="edit">
+<p>
+	<label for="title">Title</label>
+	<input type="text" value="{$article['title']}" id="title" name="title" required />
+</p>
+<p>
+	<label for="excerpt">Excerpt</label>
+	<textarea id="excerpt" name="excerpt">{$article['excerpt']}</textarea>
+</p>
+<p>
+	<label for="body">Body</label>
+	<textarea id="body" name="body">{$article['body']}</textarea>
+</p>
+<h3>SEO Options</h3>
+<p>
+	<label for="urlSlug">Url Slug</label>
+	<input type="text" value="{$article['urlSlug']}" id="urlSlug" name="urlSlug" required />
+</p>
+<p>
+	<label for="metaDescription">Meta Description</label>
+	<input type="text" value="{$article['metaDescription']}" id="metaDescription" name="metaDescription" required />
+</p>
+<p>
+	<label for="metaKeywords">Meta Keywords</label>
+	<input type="text" value="{$article['metaKeywords']}" id="metaKeywords" name="metaKeywords" required />
+</p>
+<p>
+	<label for="tags">Tags</label>
+	<input type="text" value="{$article['tags']}" id="tags" name="tags" required />
+</p>
+<p class="center">
+	<input type="submit" value=" Update " />
+</p>
+</form>
+<form action="{$installRoot}/delete/{$article['id']}" method="post" id="delete">
+<p class="center delete-article">
+	<input type="submit" value="Delete this article" class="delete-button" id="confirm" />
+</p>
+</form>
